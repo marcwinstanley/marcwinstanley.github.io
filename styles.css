@@ -1,0 +1,219 @@
+@font-face {
+    font-family: Reith;
+    src: url(https://nav.files.bbci.co.uk/orbit/1b2e292884201dd13064a9204e177864/font/BBCReithSans_W_Rg.woff2);
+}
+
+@font-face {
+    font-family: Reith;
+    src: url(https://nav.files.bbci.co.uk/orbit/1b2e292884201dd13064a9204e177864/font/BBCReithSans_W_Bd.woff2);
+    font-weight: bold;
+}
+
+.share-tool {
+  /* padding: 1em; */
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-family: Reith;
+  font-size: 1em;
+  float: right;
+}
+
+.share-tool:hover .dropdown-button {
+  background-color: #000;
+  color: #fff;
+}
+
+.share-tool:hover .share-icon {
+    background-image: url(images/white/share.png);
+}
+
+.dropdown-button {
+  background-color: #fff;
+  padding: 5px 10px;
+  border-color: #000;
+  border-width: 2px;
+  border-radius: 20px;
+  color: #000;
+  font-size: 1em;
+}
+
+.social-networks {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 5px 0;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightgrey;
+  margin-top: 15px;
+  border-radius: 5px;
+  padding-bottom: 0;
+  left: -15%;
+}
+
+.share-title {
+  display: block;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.social-network {
+  display: block;
+  padding: 10px 0;
+}
+
+.sn-twitter:hover {
+    background-color: #00ACEE;
+    color: #fff;
+}
+
+.sn-facebook:hover {
+    background-color: #3B5998;
+    color: #fff;
+}
+
+.sn-pinterest:hover {
+    background-color: #C8232C;
+    color: #fff;
+}
+
+.sn-linkedin:hover {
+    background-color: #0072B1;
+    color: #fff;
+}
+
+.sn-tumblr:hover {
+    background-color: #34526F;
+    color: #fff;
+}
+
+.sn-copy {
+    background-color: #DCDCDC;
+    color: #000;
+}
+
+.sn-copy:hover {
+    background-color: #696969;
+    color: #fff;
+    cursor: pointer;
+}
+
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.show {
+    display: block;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    background-size: contain;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.share-icon {
+    background-image: url(images/colour/share.png);
+    width: 15px;
+    height: 15px;
+}
+
+.twitter-icon {
+    background-image: url(images/colour/twitter.png);
+}
+
+.sn-twitter:hover .icon {
+    background-image: url(images/white/twitter.png);
+}
+
+.facebook-icon {
+    background-image: url(images/colour/facebook.png);
+}
+
+.sn-facebook:hover .icon {
+    background-image: url(images/white/facebook.png);
+}
+
+.pinterest-icon {
+    background-image: url(images/colour/pinterest.png);
+}
+
+.sn-pinterest:hover .icon {
+    background-image: url(images/white/pinterest.png);
+}
+
+.tumblr-icon {
+    background-image: url(images/colour/tumblr.png);
+}
+
+.sn-tumblr:hover .icon {
+    background-image: url(images/white/tumblr.png);
+}
+
+.linkedin-icon {
+    background-image: url(images/colour/linkedin.png);
+}
+
+.sn-linkedin:hover .icon {
+    background-image: url(images/white/linkedin.png);
+}
+
+.copy-icon {
+    background-image: url(images/colour/copy.png);
+}
+
+.sn-copy:hover .icon {
+    background-image: url(images/white/copy.png);
+}
+
+.sn {
+    text-align: left;
+    width: 60%;
+    display: inline-block;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media only screen and (max-device-width: 1008px) {
+    .dropdown-button {
+        font-size: 48px;
+        border-radius: 35px;
+        height: 75px;
+        padding: 0 25px;
+    }
+
+    .share-icon {
+        width: 35px;
+        height: 35px;
+        padding-right: 5px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+        padding-right: 35px;
+    }
+
+    .social-networks {
+        min-width: 600px;
+        left: -60%;
+    }
+
+    .social-network {
+        padding: 35px 0;
+    }
+
+    .share-tool {
+        font-size: 54px;
+    }
+}

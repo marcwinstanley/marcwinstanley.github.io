@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="sharejs.js"></script>
+    </head>
+    <body>
+        <div class="share-tool"
+             onMouseOver="showDropDown()"
+             onMouseOut="hideDropDown()">
+            <button class="dropdown-button"
+                    onClick="toggleDropDown()"
+                    ontouchend="onTouch()">
+                <i class="icon share-icon"></i>
+                Share page
+            </button>
+            <div class="social-networks" id="ddlist">
+                <div class="share-title">Share article to:</div>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=bbc.co.uk" target="_blank" class="social-network sn-facebook">
+                    <span class="sn">
+                        <i class="icon facebook-icon"></i>
+                        Facebook
+                    </span>
+                </a>
+                <a href="https://twitter.com/intent/tweet?url=bbc.co.uk" target="_blank" class="social-network sn-twitter">
+                    <span class="sn">
+                        <i class="icon twitter-icon"></i>
+                        Twitter
+                    </span>
+                </a>
+                <a href="https://pinterest.com/pin/create/link/?url=bbc.co.uk" target="_blank" class="social-network sn-pinterest">
+                    <span class="sn">
+                        <i class="icon pinterest-icon"></i>
+                        Pinterest
+                    </span>
+                </a>
+                <a
+                    href="https://linkedin.com/sharing/share-offsite/?url=bbc.co.uk" target="_blank" class="social-network sn-linkedin">
+                    <span class="sn">
+                        <i class="icon linkedin-icon"></i>
+                        LinkedIn
+                    </span>
+                </a>
+                <a href="https://tumblr.com/share/link?urlbbc.co.uk" target="_blank" class="social-network sn-tumblr">
+                    <span class="sn">
+                        <i class="icon tumblr-icon"></i>
+                        Tumblr
+                    </span>
+                </a>
+                <a href="javascript:copyLink()" class="social-network sn-copy">
+                    <span class="sn">
+                        <i class="icon copy-icon"></i>
+                        <span id="copy-text">Copy Link</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

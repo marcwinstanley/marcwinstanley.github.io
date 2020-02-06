@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="article.css">
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="sharejs.js"></script>
+    </head>
+    <body>
+        <div class="site-brand site-brand--height" role="banner" aria-label="BBC News">
+            <div class="site-brand-inner site-brand-inner--height">
+                <div class="navigation navigation--primary">
+                </div>
+            </div>
+        </div>
+
+        <div id="page" class="story">
+            <div role="main">
+                <div class="container-width-only">
+                </div>
+                <div class="container">
+                    <div class="column--single-column-layout">
+                        <div class="story-body">
+                            <div>
+                                <span class="section">Sharing</span>
+                                <div class="share-tool"
+                                     onMouseOver="showDropDown()"
+                                     onMouseOut="hideDropDown()">
+                                    <button class="dropdown-button"
+                                            ontouchend="onTouch(event)"
+                                            onClick="toggleDropDown()"
+                                            aria-haspopup="true"
+                                            aria-expanded="fasle"
+                                            id="shareButton">
+                                        <i class="icon share-icon"></i>
+                                        Share page
+                                    </button>
+                                    <div class="social-networks" id="ddlist">
+                                        <div class="share-title">Share article to:</div>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=bbc.co.uk" target="_blank" class="social-network sn-facebook">
+                                            <span class="sn">
+                                                <i class="icon facebook-icon"></i>
+                                                Facebook
+                                            </span>
+                                        </a>
+                                        <a href="https://twitter.com/intent/tweet?url=bbc.co.uk" target="_blank" class="social-network sn-twitter">
+                                            <span class="sn">
+                                                <i class="icon twitter-icon"></i>
+                                                Twitter
+                                            </span>
+                                        </a>
+                                        <a href="https://pinterest.com/pin/create/link/?url=bbc.co.uk" target="_blank" class="social-network sn-pinterest">
+                                            <span class="sn">
+                                                <i class="icon pinterest-icon"></i>
+                                                Pinterest
+                                            </span>
+                                        </a>
+                                        <a
+                                                   href="https://linkedin.com/sharing/share-offsite/?url=bbc.co.uk" target="_blank" class="social-network sn-linkedin">
+                                            <span class="sn">
+                                                <i class="icon linkedin-icon"></i>
+                                                LinkedIn
+                                            </span>
+                                        </a>
+                                        <a href="https://tumblr.com/share/link?urlbbc.co.uk" target="_blank" class="social-network sn-tumblr">
+                                            <span class="sn">
+                                                <i class="icon tumblr-icon"></i>
+                                                Tumblr
+                                            </span>
+                                        </a>
+                                        <a href="javascript:copyLink()" class="social-network sn-copy">
+                                            <span class="sn">
+                                                <i class="icon copy-icon"></i>
+                                                <span id="copy-text" aria-live="polite">Copy Link</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="story-body__h1">Share Tools Example Page</h1>
+                            <div class="story-body__inner" property="articleBody">
+                                <div class="story-container">
+                                    <div class="column column-one">
+                                        <p class="story-body__introduction">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                        <p class="story-body__introduction">
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </p>
+                                    </div>
+                                    <div class="column column-two">
+                                        <p>
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="image-and-copyright-container">
+                                    <img class="js-image-replace"
+                                    alt="Illustration of people separated either
+                                    side of a landscape"
+                                    src="images/article-image.jpg" width="976" height="549" data-highest-encountered-width="976">
+                                </span>
+                                <div class="story-container">
+                                    <div class="column column-one">
+                                        <p>
+                                            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+                                        </p>
+                                    </div>
+                                    <div class="column column-two">
+                                        <p>
+                                            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
